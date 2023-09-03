@@ -54,11 +54,215 @@ class _HomePageState extends State<HomePage> {
 
   _buildQuizView() {
     // TODO: build UI
-    return Center(child: Text('TODO: build UI'));
+    return Center(
+        child: Container(
+            decoration: BoxDecoration(
+                color: Colors.white,
+                shape: BoxShape.rectangle,
+                borderRadius: BorderRadius.circular(60.0),
+                border: Border.all(color: Colors.black)),
+            width: 600,
+            height: 440,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text('Question 1 of 3'),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.greenAccent,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(30.0),
+                      border: Border.all(color: Colors.black),
+                    ),
+                    width: 500,
+                    height: 80,
+                    child: Center(
+                      child: Text('1 + 1 = ?'),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.lightBlue,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black),
+                    ),
+                    width: 500,
+                    height: 45,
+                    alignment: FractionalOffset.centerLeft,
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.redAccent,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(7.0),
+                              border: Border.all(color: Colors.black),
+                            ),
+                            width: 30,
+                            height: 30,
+                            child: Center(
+                              child: Text('A'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 15),
+                            child: Text('2')),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 400.0),
+                          child: Icon(Icons.check),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black),
+                    ),
+                    width: 500,
+                    height: 45,
+                    alignment: FractionalOffset.centerLeft,
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(7.0),
+                              border: Border.all(color: Colors.black),
+                            ),
+                            width: 30,
+                            height: 30,
+                            child: Center(
+                              child: Text('B'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 15),
+                            child: Text('3'))
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black),
+                    ),
+                    width: 500,
+                    height: 45,
+                    alignment: FractionalOffset.centerLeft,
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(7.0),
+                              border: Border.all(color: Colors.black),
+                            ),
+                            width: 30,
+                            height: 30,
+                            child: Center(
+                              child: Text('C'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 15),
+                            child: Text('4'))
+                      ],
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 20.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      shape: BoxShape.rectangle,
+                      borderRadius: BorderRadius.circular(15.0),
+                      border: Border.all(color: Colors.black),
+                    ),
+                    width: 500,
+                    height: 45,
+                    alignment: FractionalOffset.centerLeft,
+                    child: Row(
+                      children: [
+                        Padding(
+                          padding: EdgeInsets.only(left: 8.0),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              shape: BoxShape.rectangle,
+                              borderRadius: BorderRadius.circular(7.0),
+                              border: Border.all(color: Colors.black),
+                            ),
+                            width: 30,
+                            height: 30,
+                            child: Center(
+                              child: Text('D'),
+                            ),
+                          ),
+                        ),
+                        Padding(
+                            padding: EdgeInsets.only(left: 15),
+                            child: Text('5'))
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            )));
   }
 
   _buildButtonPanel() {
     // TODO: build UI
-    return Center(child: Text('TODO: build UI'));
+    return Scaffold(
+        appBar: AppBar(
+          title: Text(''),
+        ),
+        floatingActionButton: Expanded(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              FloatingActionButton(
+                onPressed: () {},
+                child: Text('<'),
+              ),
+              SizedBox(
+                height: 10,
+                width: 10,
+              ),
+              FloatingActionButton(
+                onPressed: () {},
+                child: Text('>'),
+              )
+            ],
+          ),
+        ));
   }
 }
